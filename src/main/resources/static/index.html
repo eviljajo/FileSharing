@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>Spring Boot File Upload / Download Rest API Example</title>
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+	<div class="upload-container">
+		<div class="upload-header">
+			<h2>Upload file to database</h2>
+		</div>
+		<div class="multiple-upload">
+			<form id="multipleUploadForm" name="multipleUploadForm">
+				<input id="multipleFileUploadInput" type="file" name="files"
+					class="file-input" multiple required>
+				<p>Drag your files here or click in this area.</p>
+				<button type="submit" class="primary submit-btn">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="upload-response">
+		<div id="multipleFileUploadError"></div>
+		<div id="multipleFileUploadSuccess"></div>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/js/main.js"></script>
+	
+
+</body>
+</html>
